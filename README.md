@@ -61,3 +61,7 @@ References
 All assets used in the project are self-made and do not require external references.
 
 Note: This project reuses code from Assignment 2, specifically the structure and layout of HTML pages and some CSS styling. JavaScript functions for dark mode toggle and form validation are newly implemented for this project.
+
+Fianlly hosted teh website in github
+the link:
+https://ruddraw.github.io/assignment3/index.html
