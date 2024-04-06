@@ -1,0 +1,256 @@
+:root {
+  --body-color: #ffffff;
+  --primary-color: #1B77F2;
+  --secondary-color: #FF6E61;
+  --font-family: "Bodoni Moda", serif;
+  --text-color: #ffffff;
+  --main-text-color: #000000;
+  --form-color: #f9f9f9; 
+}
+.dark-theme{
+  --body-color: #02070D;
+  --primary-color: #1B77F2;
+  --secondary-color: #FF6E61;
+  --font-family: "Bodoni Moda", serif;
+  --text-color: #ffffff;
+  --main-text-color: #CCCCCC;
+  --form-color: #CCCCCC;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--body-color);
+  font-family: "Bodoni Moda", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  padding-left: 5rem;
+}
+
+.nav a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+#btn{
+  background-color: #40A2D4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.cube {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.container {
+  color: var(--main-text-color);
+  padding: 20px;
+  justify-content: center;
+}
+.yt_description p{
+  padding-top: 3em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cube_video {
+  padding: 20px;
+  align-items: center;
+}
+table{
+  border: 2px;
+}
+.WCA{
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+video {
+  margin-left: 10em;
+  align-items: end;
+}
+
+.guitar_audio{
+  padding-left: 25px;
+  color: var(--main-text-color);
+}
+.text {
+  width: 100%;
+  border-collapse:collapse;
+  color: var(--main-text-color);
+}
+
+.text tr:first-child {
+  background-color: var(--primary-color);
+  color: var(--text-color); /* Optional: Set text color for better contrast */
+}
+
+.text tr:nth-child(even) {
+  color: var(--main-text-color);
+}
+
+
+.text td {
+  border: 1px solid var(--main-text-color);
+  padding: 8px;
+  text-align: left;
+}
+
+.text th {
+  background-color: var(--body-color);
+  border: 1px solid var(--main-text-color);
+  padding: 4px;
+  text-align: left;
+}
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+
+/* form css */
+.form-container {
+  margin-top: 20px; 
+}
+
+#myForm {
+  width: 60%; 
+  margin: auto; 
+  padding: 20px;
+  background-color: var(--form-color);
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+textarea {
+  height: 200px; 
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: var(--body-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Clearfix to prevent collapsing margins */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/*footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  display: inline-block; 
+}
+footer a img {
+  transition: transform 0.2s ease-in-out;
+}
+footer a:hover img {
+  transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* Add your responsive styles here */
+
+  /* For example, adjust navigation styles */
+  .nav {
+    justify-content: center;
+  }
+
+  .nav li {
+    padding: 0 2rem;
+  }
+
+  /* Adjust video size */
+  .cube_video video,
+  .cube_video iframe {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}

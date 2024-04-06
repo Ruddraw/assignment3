@@ -1,0 +1,195 @@
+:root {
+  --body-color: #F2F7FD;
+  --primary-color: #1B77F2;
+  --secondary-color: #FF6E61;
+  --font-family: "Bodoni Moda", serif;
+  --text-color: #ffffff;
+  --main-text-color: #333333;
+}
+.dark-theme{
+  --body-color: #02070D;
+  --primary-color: #1B77F2;
+  --secondary-color: #FF6E61;
+  --font-family: "Bodoni Moda", serif;
+  --text-color: #ffffff;
+  --main-text-color: #CCCCCC;
+}
+
+body {
+  background: var(--body-color);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  padding-left: 5rem;
+}
+
+.nav a {
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+#btn{
+  background-color: #40A2D4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+main {
+  display: grid;
+  gap: 10px;
+  padding: 5px;
+  grid-template-areas:
+    "project1"
+    "project2"
+    "project3";
+}
+
+.project {
+  color: var(--main-text-color);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project_img {
+  height: 5em;
+  width: 7em;
+  margin-left: 4em;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project_description::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project_description {
+  margin-right: 4em;
+}
+
+p ~ ol {
+  padding-left: 2em;
+}
+
+.github {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-text-color);
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.github:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+ol ol li {
+  list-style-type: lower-roman;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer a img {
+  transition: transform 0.2s ease-in-out;
+}
+
+footer a:hover img {
+  transform: scale(1.2);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .project {
+    grid-template-columns: 1fr; /* Adjusting to a single column layout */
+    gap: 10px;
+  }
+
+  .project_img {
+    height: auto;
+    width: 100%; /* Adjusting image width to fit the container */
+    margin-left: auto; /* Centering the image */
+    margin-right: auto; /* Centering the image */
+  }
+
+  .project_description {
+    text-align: center; /* Aligning text to the center */
+    margin-right: 0; /* Removing right margin */
+  }
+
+  .description {
+    font-size: 0.8rem; /* Adjusting font size */
+    margin-top: 10px; /* Adding margin to separate text from the image */
+  }
+
+  p ~ ol {
+    padding-left: 0; /* Removing padding for nested lists */
+  }
+
+  .github {
+    margin-top: 5px; /* Adjusting margin for GitHub links */
+  }
+}
+

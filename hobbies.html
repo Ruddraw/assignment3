@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies</title>
+  <link rel="icon" href="Asset/logo.png">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><button id="btn"></button></li>
+        <li><img src="Asset/moon.png" id="icon" alt="dark mood button"></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="cube">
+      <div class="container">
+        <p class="text">
+          In addition to my school commitments, I actively engage in competitive speed-cubing.<br>
+          <a href="https://www.worldcubeassociation.org/persons/2019RUDD02" class="WCA">My WCA Profile</a>
+        </p>
+        <h2>My best events are:</h2>
+        <table class="text">
+          <tr>
+            <td>Event</td>
+            <td>Best Timing</td>
+          </tr>
+          <tr>
+            <td>3X3</td>
+            <td>11.63</td>
+          </tr>
+          <tr>
+            <td>Pyraminix</td>
+            <td>7.03</td>
+          </tr>
+          <tr>
+            <td>Skewb</td>
+            <td>5.73</td>
+          </tr>
+        </table>
+      </div>
+      <div class="cube_video">
+        <video height="350" width="440" controls>
+          <source src="Asset/cubing_comp.MOV">
+        </video>
+      </div>  
+    </div>  
+    <div class="cube">
+      <div class="cube_video">
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/7Ron6MN45LY?si=J1yGi4dfqAMd6CSj" title="YouTube video player">
+          </iframe>
+      </div>
+      <div class="container">
+        <div class="yt_description">
+          <p>Seems interesting? <br>Check out the video that guided me in learning how to solve a Rubik's Cube.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="guitar_audio">
+      <p> 
+        In addition to my passion for solving cubes, I also enjoy playing the guitar.<br>Here is a small cover of one of my favorite songs, "The Best of Times," by the band Dream Theater.
+      </p>
+      <audio src="Asset/TheBestOfTime-DTCover.mp3" controls></audio>
+    </div>
+
+
+    <!-- New form section -->
+  <div class="form-container">
+    <form id="myForm" action="mailto:afifasad1117@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  </main>
+  <footer>
+    <p>Email me: afifasad1117@gmail.com</p>
+    <a href="https://github.com/Ruddraw">
+      <img src="Asset/github.png" alt="Github Icon" height="30" width="30">
+    </a>
+    <a href="https://www.linkedin.com/in/afif-asad-ruddraw-100ab8233/">
+      <img src="Asset/linkedin.jpg" alt="Linkedin Icon" height="30" width="30">
+    </a>
+  </footer>
+</body>
+<script src="app.js"></script>
+</html>

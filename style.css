@@ -1,0 +1,202 @@
+:root {
+  --body-color: #F2F7FD;
+  --primary-color: #1B77F2;
+  --secondary-color: #FF6E61;
+  --font-family: "Bodoni Moda", serif;
+  --text-color: #ffffff;
+  --main-text-color: #333333;
+  --changed-nav-color: #40A2D4;
+  --changed-nav-color-2nd: #012232 ;
+}
+.dark-theme{
+  --body-color: #02070D;
+  --primary-color: #1B77F2;
+  --secondary-color: #FF6E61;
+  --font-family: "Bodoni Moda", serif;
+  --text-color: #ffffff;
+  --main-text-color: #CCCCCC;
+  --name-text-xolor: #02070D;
+  --changed-nav-color: #40A2D4;
+  --changed-nav-color-2nd: #012232 ;
+}
+/* Universal styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--body-color);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: cenflex-endter;
+}
+
+.nav li {
+  padding-left: 5rem;
+}
+
+.nav a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+#btn{
+  background-color: #40A2D4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+/* Hero section styles */
+.hero_section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  text-align: right;
+}
+
+/* Heading styles */
+h1, h2 {
+  color: var(--main-text-color);
+}
+
+.name {
+  color: var(--name-text-xolor);
+  font-size: 6em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Main section styles */
+main {
+  h2 {
+    border: 1px solid;
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 7vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .afif {
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    color: var(--secondary-color);
+  }
+
+  .dalhousie {
+    color: var(--secondary-color);
+  }
+
+  h2 + p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: inline-block;
+  margin-left: 10px;
+
+  img {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjustments for header */
+  .nav li {
+    padding-left: 2rem; /* Reduce padding */
+  }
+  .name {
+    font-size: 2rem;
+  margin: 0;
+  line-height: 1.2;
+  }
+  /* Adjustments for hero section */
+  .hero-text {
+    top: 40%; /* Move text slightly higher */
+    right: 5%; /* Adjust text position */
+  }
+
+  /* Adjustments for main section */
+  main h2 {
+    padding: 5vh; /* Reduce padding */
+    font-size: 1em; /* Adjust font size for mobile */
+  }
+}
+
